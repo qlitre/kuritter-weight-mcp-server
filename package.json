@@ -1,0 +1,18 @@
+{
+  "name": "kurittter-weight-mcp-server",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "agents": "^0.0.94",
+    "hono": "^4.7.10",
+    "zod": "^3.25.42"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250531.0",
+    "wrangler": "^4.4.0"
+  }
+}
